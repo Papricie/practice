@@ -154,3 +154,33 @@ else:
     vysledek = "Neznámá operace"
 
 print("Výsledek:", vysledek)
+
+###
+
+while True:
+    cislo1 = input("Zadej první číslo (nebo 'konec' pro ukončení): ")
+            
+    if cislo1.lower() == "konec":
+        print("Program se ukončuje. 👋")
+        break
+                                    
+    cislo1 = float(cislo1)
+    operace = input("Zadej operaci (+, -, *, /): ")
+    cislo2 = float(input("Zadej druhé číslo: "))
+
+    if operace == "+":
+        vysledek = cislo1 + cislo2
+    elif operace == "-":
+        vysledek = cislo1 - cislo2
+    elif operace == "*":
+        vysledek = cislo1 * cislo2
+    elif operace == "/":
+        if cislo2 != 0:
+            vysledek = cislo1 / cislo2
+        else:
+            vysledek = "Nulou nelze dělit!"
+    else:
+        vysledek = "Neznámá operace"
+
+    print("Výsledek:", vysledek)
+    print("-" * 20)  # oddělovač
