@@ -86,3 +86,49 @@ else:
 
 ###
 
+import random
+
+znaky = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+
+delka = int(input("Zadej délku hesla: "))
+
+heslo = ""
+for i in range(delka):
+    heslo += random.choice(znaky)
+
+print(f"Tvoje nové heslo je: {heslo}")
+
+###
+
+import random
+
+# Možné sady znaků
+pismena = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+cisla = "0123456789"
+specialy = "!@#$%^&*()"
+
+# Uživatel si vybere úroveň složitosti
+print("Vyber složitost hesla:")
+print("1 - Jen písmena")
+print("2 - Písmena a čísla")
+print("3 - Písmena, čísla a speciální znaky")
+
+volba = input("Tvoje volba (1/2/3): ")
+
+# Podle volby nastavíme znaky
+if volba == "1":
+    znaky = pismena
+elif volba == "2":
+    znaky = pismena + cisla
+else:
+    znaky = pismena + cisla + specialy
+
+# Uživatel zadá délku hesla
+delka = int(input("Zadej délku hesla: "))
+
+# Generování hesla
+heslo = ""
+for i in range(delka):
+    heslo += random.choice(znaky)
+
+print(f"Tvoje nové heslo je: {heslo}")
