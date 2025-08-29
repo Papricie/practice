@@ -184,3 +184,38 @@ while True:
 
     print("Výsledek:", vysledek)
     print("-" * 20)  # oddělovač
+
+###
+
+skore = 0
+
+print("Vítej v kvízu! 🎉")
+print("Odpovídej a uvidíme, kolik máš bodů.")
+print("-" * 20)
+
+# Otázka 1
+odpoved = input("1) Jaká je hlavní město ČR? ")
+if odpoved.lower() == "praha":
+    print("Správně! ✅")
+    skore += 1
+else:
+    print("Špatně ❌")
+
+# Otázka 2
+odpoved = input("2) Kolik je 5 + 7? ")
+if odpoved == "12":
+    print("Správně! ✅")
+    skore += 1
+else:
+    print("Špatně ❌")
+
+# Otázka 3
+odpoved = input("3) Jak se řekne anglicky 'kočka'? ")
+if odpoved.lower() == "cat":
+    print("Správně! ✅")
+    skore += 1
+else:
+    print("Špatně ❌")
+
+print("-" * 20)
+print(f"Kvíz je hotový! Tvoje skóre je {skore}/3.")
