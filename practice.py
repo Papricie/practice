@@ -29,8 +29,8 @@ print(f"Jmenuji se {jmeno} a je mi {vek} let.")
 
 if vek >= 18:
     print("Jsi dospělý/á.")
-    else:
-        print("Je ti méně než 18 let.")
+else:
+    print("Je ti méně než 18 let.")
 
 ###
 
@@ -41,12 +41,12 @@ print(f"Jmenuji se {jmeno} a je mi {vek} let.")
 
 if vek <= 12:
     print("Jsi dítě.")
-    elif vek <= 17:
-        print("Jsi teenager.")
-        elif vek <= 64:
-            print("Jsi dospělý/á.")
-            else:
-                print("Jsi senior.")
+elif vek <= 17:
+    print("Jsi teenager.")
+elif vek <= 64:
+    print("Jsi dospělý/á.")
+else:
+    print("Jsi senior.")
 
 ###
 
@@ -58,11 +58,11 @@ tip = 0
 while tip != tajne_cislo:
     tip = int(input("Hádej číslo od 1 do 10: "))
         
-            if tip < tajne_cislo:
-                    print("Moc nízké!")
-                        elif tip > tajne_cislo:
-                                print("Moc vysoké!")
-                                    else:
+if tip < tajne_cislo:
+    print("Moc nízké!")
+elif tip > tajne_cislo:
+    print("Moc vysoké!")
+else:
                                             print("Správně! 🎉")
 
 ###
@@ -75,14 +75,14 @@ pokusy = 0
 
 while tip != tajne_cislo:
     tip = int(input("Hádej číslo od 1 do 10: "))
-        pokusy += 1
+    pokusy += 1
             
-                if tip < tajne_cislo:
-                        print("Moc nízké!")
-                            elif tip > tajne_cislo:
-                                    print("Moc vysoké!")
-                                        else:
-                                                print(f"Správně! 🎉 Uhodla jsi číslo za {pokusy} pokusů.")
+if tip < tajne_cislo:
+    print("Moc nízké!")
+elif tip > tajne_cislo:
+    print("Moc vysoké!")
+else:
+    print(f"Správně! 🎉 Uhodla jsi číslo za {pokusy} pokusů.")
 
 ###
 
