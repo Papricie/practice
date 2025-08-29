@@ -132,3 +132,25 @@ for i in range(delka):
     heslo += random.choice(znaky)
 
 print(f"Tvoje nové heslo je: {heslo}")
+
+###
+
+cislo1 = float(input("Zadej první číslo: "))
+operace = input("Zadej operaci (+, -, *, /): ")
+cislo2 = float(input("Zadej druhé číslo: "))
+
+if operace == "+":
+    vysledek = cislo1 + cislo2
+elif operace == "-":
+    vysledek = cislo1 - cislo2
+elif operace == "*":
+    vysledek = cislo1 * cislo2
+elif operace == "/":
+    if cislo2 != 0:
+        vysledek = cislo1 / cislo2
+    else:
+        vysledek = "Nulou nelze dělit!"
+else:
+    vysledek = "Neznámá operace"
+
+print("Výsledek:", vysledek)
